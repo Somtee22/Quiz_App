@@ -7,7 +7,7 @@
     background: greenyellow;
  }
 
-.start-btn, .info-box{
+.start-btn, .info-box, .quiz-box{
     position: absolute;
     top: 50%;
     left: 50%; 
@@ -93,8 +93,101 @@
     color: black;
 }
   
+.quiz-box {
+    width: 550px;
+    background-color: white;
+    border-radius: 5px;
+}
 
+.quiz-box header{
+    position: relative;
+    z-index: 99;
+    height: 70px;
+    padding: 0 30px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px 5px ;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 1);
+}
   
+.quiz-box header .title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.quiz-box header .timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    background: firebrick;
+    color: wheat;
+    border-radius: 5px;
+    border: 3px solid greenyellow;
+    padding: 0 8px;
+}
+
+.quiz-box header .timer .time-text{
+font-weight: 400;
+font-size: 17px;
+user-select: none;
+}
+
+.quiz-box header .timer .timer-sec {
+    background: black;
+    height: 30px;
+    width: 45px;
+    font-size: 18px;
+    font-weight: 500px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    border: 2px solid greenyellow;
+    user-select: none;
+}
+.quiz-box section{
+    padding: 25px 30px 20px 30px; 
+    background: #fff; 
+
+}
+
+.quiz-box section .que-text {
+    font-size: 25px; 
+   font-weight: 600;
+}
+.quiz-box section .option-list {
+    padding: 20px 0;
+    display: block;
+}
+
+section .option-list .option {
+    background: aliceblue;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+
+}
+section .option-list .option:hover {
+    color: maroon;
+    background: #cce5ff;
+}
+section .option-list .option:last-child{
+    margin-bottom: 0px;
+}
+
+section .option-list .option .icon {
+
+}
 
 
 
