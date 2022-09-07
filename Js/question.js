@@ -1,6 +1,17 @@
 let questions = [
  
     {
+    numb: 1,
+    question: "What does HTML stand for?",
+    answer: "Hyper Text Markup Language",
+    options: [
+      "Hyper Text Preprocessor",
+      "Hyper Text Markup Language",
+      "Hyper Text Multiple Language",
+      "Hyper Tool Multiple language"
+    ]
+  },
+    {
     numb: 2,
     question: "What does CSS stand for?",
     answer: "Cascading Style Sheet",
@@ -12,20 +23,33 @@ let questions = [
     ]
   },
     {
-    numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+      numb: 3,
+      question: "Choose the correct HTML element for the largest heading?",
+      answer: "<h1>",
+      options: [
+        "<h1>",
+        "<h6>",
+        "<heading>",
+        "<head>",
+        
+    ]
+},
+    {
+    numb: 4,
+    question: " What is the correct HTML element for inserting a line break?",
+    answer: "<br>",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "<break>",
+      "<lb>",
+      "<br>",
+      "<b>",
+      
     ]
 },
 // you can uncomment the below codes and make duplicate as more as you want to add question
 // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
   {
-  numb: 6,
+  numb: 5,
   question: "Your Question is Here",
   answer: "Correct answer of the question is here",
   options: [
@@ -36,18 +60,8 @@ let questions = [
   ]
 },
 ];
+console.log(questions) 
 
-// Choose the correct HTML element for the largest heading:
-// <h1>
-// <h6>
-// <heading>
-// <head>
-
-// What is the correct HTML element for inserting a line break?
-// <break>
-// <lb>
-// <br>
-// <b>
 
 
 
@@ -56,13 +70,6 @@ let questions = [
 
 
 
-
-// What Does CSS Stand for?
-// Common Style Sheet
-// Cascading Style Sheet
-// Computer Style Sheet
-// Colourful Style Sheet
-//selecting all required elements
 
 
 
