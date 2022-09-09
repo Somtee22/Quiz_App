@@ -8,7 +8,7 @@ const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 // const result_box = document.querySelector(".result_box");
-// const option_list = document.querySelector(".option_list");
+const option_list = document.querySelector(".option_list");
 // const time_line = document.querySelector("header .time_line");
 // const timeText = document.querySelector(".timer .time_left_txt");
 // const timeCount = document.querySelector(".timer .timer_sec");
@@ -36,6 +36,49 @@ continue_btn.onclick = ()=>{
 
 // let timeValue =  15;
 let que_count = 0;
+
+
+ const next_btn = quiz_box.querySelector(".next_btn");
+// const bottom_ques_counter = document.querySelector("footer .total_que");
+
+// if Next Que button clicked
+ next_btn.onclick = ()=>{
+     if(que_count < questions.length - 1){ //if question count is less than total question length
+         que_count++;               //increment the que_count value
+//         que_numb++;            //increment the que_numb value
+        showQuestions(que_count); //calling showQestions function
+
+    }else{
+//         clearInterval(counter); //clear counter
+//         clearInterval(counterLine); //clear counterLine
+//         showResult(); //calling showResult function
+     }
+}
+
+// // getting questions and options from array
+     function showQuestions(index){
+    const que_text = document.querySelector(".que_text");
+
+    //creating a new span and div tag for question and option and passing the value using array index
+    let que_tag = '<span>'+ questions[index].numb + ". " + questions[index].question +'</span>';
+     let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>'
+        + '<div class="option"><span>'+ questions[index].options[1] +'</span></div>'
+        + '<div class="option"><span>'+ questions[index].options[2] +'</span></div>'
+        + '<div class="option"><span>'+ questions[index].options[3] +'</span></div>';
+     que_text.innerHTML = que_tag; //adding new span tag inside que_tag
+     option_list.innerHTML = option_tag; //adding new div tag inside option_tag
+    
+    const option = option_list.querySelectorAll(".option");
+
+
+
+     }
+ 
+     const bottom_ques_counter = quiz_box.querySelector(".total_que");
+     let totalQueCounTag =  '<span><p>'+ que_count + '2</p>of<p>10'+ questions.length +'</p>Questions</span>';
+
+
+
 // let que_numb = 1;
 // let userScore = 0;
 // let counter;
@@ -69,15 +112,7 @@ let que_count = 0;
 //     window.location.reload(); //reload the current window
 // }
 
- const next_btn = document.querySelector("footer .next_btn");
-// const bottom_ques_counter = document.querySelector("footer .total_que");
 
-// // if Next Que button clicked
-// next_btn.onclick = ()=>{
-//     if(que_count < questions.length - 1){ //if question count is less than total question length
-//         que_count++; //increment the que_count value
-//         que_numb++; //increment the que_numb value
-//         showQuetions(que_count); //calling showQestions function
 //         queCounter(que_numb); //passing que_numb value to queCounter
 //         clearInterval(counter); //clear counter
 //         clearInterval(counterLine); //clear counterLine
@@ -85,27 +120,9 @@ let que_count = 0;
 //         startTimerLine(widthValue); //calling startTimerLine function
 //         timeText.textContent = "Time Left"; //change the timeText to Time Left
 //         next_btn.classList.remove("show"); //hide the next button
-//     }else{
-//         clearInterval(counter); //clear counter
-//         clearInterval(counterLine); //clear counterLine
-//         showResult(); //calling showResult function
-//     }
-// }
 
-// // getting questions and options from array
-     function showQuestions(index){
-    const que_text = document.querySelector(".que_text");
 
-    //creating a new span and div tag for question and option and passing the value using array index
-    let que_tag = '<span>'+ questions[index].numb + ". " + questions[index].question +'</span>';
-     let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>'
-        + '<div class="option"><span>'+ questions[index].options[1] +'</span></div>'
-        + '<div class="option"><span>'+ questions[index].options[2] +'</span></div>'
-        + '<div class="option"><span>'+ questions[index].options[3] +'</span></div>';
-     que_text.innerHTML = que_tag; //adding new span tag inside que_tag
-     option_list.innerHTML = option_tag; //adding new div tag inside option_tag
-    
-    const option = option_list.querySelectorAll(".option");
+
 
 //     // set onclick attribute to all available options
 //     for(i=0; i < option.length; i++){
@@ -213,4 +230,8 @@ let que_count = 0;
 //     //creating a new span tag and passing the question number and total question
 //     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
 //     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
-}
+//}
+ 
+
+
+
