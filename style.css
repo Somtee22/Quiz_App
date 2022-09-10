@@ -375,17 +375,18 @@ footer .next_btn:hover {
 }
 
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:400px) {
 
     .start-btn button{
-        padding: 7px 10px;
+        padding: 7px 8px;
+        font-size: 15px;
     }
 
     .info-box{
        display: flex;
        flex-direction: column;
-       width: 370px;
-       height: 80vh;
+       width: 200px;
+       height: 70vh;
     }
     .info-box .info-title{
         height: 60px;

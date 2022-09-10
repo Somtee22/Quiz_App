@@ -1,4 +1,5 @@
-# Scholly's Developers Quiz_App
+# Scholly's Developer Quiz_App
+
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -23,29 +24,34 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![](./d.png)
+![](./images/screenshot1.png)
+![](./images/screenshot2.png)
 
 ## Developer Quiz Application
 
 This application tests developers on the basic Knowledge of HTML,CSS and JAVASCRIPT.
 
-The correct answer is displayed when no answer is supplied. 
+The correct answer is displayed when no answer is supplied.
 
-### Built with
 
-HTML
-CSS
+
+## Built with
+
+HTML||
+CSS ||
 JAVASCRIPT
 
-### Contact
+
+## Contact
 Twitter: https://twitter.com/lovelypearl33
 
 LinkedIn : https://linkedin.com/in/scholastica-ngene-645a75183
 
-Projectlink: https://somtee22.github.io/Quiz_App/
+Live Site: https://somtee22.github.io/Quiz_App/
 
 
-### Acknowledgement 
 
-I want to sincerely appreciate [web3bridge](https://twitter.com/Web3Bridge) for this opportunity  and also to my wonderful mentor [Jola](https://twitter.com/jolah99). You're the Best.💝💝
+## Acknowledgement 
+
+I want to sincerely appreciate [web3bridge](https://twitter.com/Web3Bridge) for this opportunity  and also to my wonderful mentor [Jola](https://twitter.com/jolah99). You're the Best💝💝.
 Thank you for all you've been doing,ure the reason have made it this far.
