@@ -223,7 +223,6 @@ let questions = [
       "Swingers, Bulleans, Spartan"
   ]
 },
-
 ];
 
 
