@@ -60,8 +60,8 @@ let questions = [
 },
   {
   numb: 6,
-  question: "What does PHP stand for",
-  answer: "",
+  question: "What does PHP stand for?",
+  answer: "HyperText Preprocessor",
   options: [
     "HyperText Preprocessor",
     "HyperText Programming",
@@ -72,7 +72,7 @@ let questions = [
   {
   numb: 7,
   question: "Where in an HTML document is the correct place to refer to an external style sheet?",
-  answer: "In the <head> section",
+  answer: "In the head section",
   options: [
     "At the end of the document",
     "In the body section",
@@ -93,7 +93,7 @@ let questions = [
 },
   {
   numb: 9,
-  question: "What CSS property is used to change the text color of an element",
+  question: "What CSS property is used to change the text color of an element?",
   answer: "color",
   options: [
     "text-color",
@@ -132,7 +132,7 @@ let questions = [
     "/* this is a comment */",
     "// this is a comment //",
     "// this is a comment",
-    "!-- this is a comment--"
+    "!-- this is a comment--!"
   ]
 },
   {
@@ -171,7 +171,7 @@ let questions = [
   {
   numb: 16,
   question: "To insert a JavaScript into an HTML page, which tag is used?",
-  answer: "<script>",
+  answer: "script",
   options: [
     "script=â€™javaâ€™",
     "javascript",
@@ -179,39 +179,51 @@ let questions = [
     "js"
   ]
 },
-  {
+{
   numb: 17,
-  question: "What does SQL stand for?",
-  answer: "Structured Query Language",
+  question: "How do you create a function in JavaScript?",
+  answer: "function myfunction()",
   options: [
-    "Option 1",
-    "option 2",
-    "option 3",
-    "Structured Query Language"
+      "function myfunction()",
+      "function = myFunction()",
+      "funtion [myFunction]",
+      "function:myFunction()"
   ]
 },
-  {
+{
   numb: 18,
-  question: "What does SQL stand for?",
-  answer: "Structured Query Language",
+  question: "What would be the result of 8 +'7'?",
+  answer:  "87",
   options: [
-    "Option 1",
-    "option 2",
-    "option 3",
-    "Structured Query Language"
-  ]
+      "15",
+      "48",
+      "57",
+      "87"
+]
 },
-  {
+{
   numb: 19,
-  question: "What does SQL stand for?",
-  answer: "Structured Query Language",
+  question: "Which company developed JavaScript?",
+  answer:  "Netscape is the software company that developed JavaScript.",
   options: [
-    "Option 1",
-    "option 2",
-    "option 3",
-    "Structured Query Language"
+      "It has always been in existence",
+      "Elon Musk and Bill Gates",
+      "Netscape is the software company that developed JavaScript.",
+      "Dangote Aliko Group of Companies"
+]
+},
+{
+  numb: 20,
+  question: "What are all the looping structures in JavaScript?",
+  answer:  "Do-while loops, For, While",
+  options: [
+      "Jumping, skipping and forwarding",
+      "Do-while loops, For, While",
+      "Do-now loops, Foryou, WhileI",
+      "Swingers, Bulleans, Spartan"
   ]
 },
+
 ];
 
 

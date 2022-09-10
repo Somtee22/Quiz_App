@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
  body{
     background: greenyellow;
@@ -20,7 +21,9 @@
                 transition: all 0.3s ease;
 }
 
-.info_box.activeInfo, .quiz_box.activeQuiz{
+.info_box.activeInfo,
+ .quiz_box.activeQuiz,
+ .result_box.activeResult{
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     pointer-events: auto;
@@ -112,7 +115,7 @@
 }
   
 .quiz_box {
-    width: 100vw;
+    width: 550px;
     background-color: white;
     border-radius: 5px;
     pointer-events: none;
@@ -169,6 +172,16 @@ user-select: none;
     border: 2px solid greenyellow;
     user-select: none;
 }
+
+.quiz_box header .time_line {
+position: absolute;
+bottom: 0px;
+left: 0px;
+
+background: red;
+height: 3px;
+}
+
 .quiz_box section{
     padding: 25px 30px 20px 30px; 
     background: #fff; 
@@ -185,8 +198,8 @@ user-select: none;
 }
 
 section .option_list .option {
-    /* background: aliceblue;
-    border: 1px solid greenyellow; */
+    /* background: aliceblue; */
+    border: 1px solid greenyellow;
     border-radius: 5px;
     padding: 8px 15px;
     margin-bottom: 15px;
@@ -272,6 +285,7 @@ section .option_list .option {
 }
 
 footer .next_btn{
+    display: none;
     height: 40px;
     padding: 0 13px;
     font-size: 15px;
@@ -360,6 +374,47 @@ footer .next_btn:hover {
     background: #007bff;
 }
 
+
+@media screen and (max-width:420px) {
+
+    .start-btn button{
+        padding: 7px 10px;
+    }
+
+    .info-box{
+       display: flex;
+       flex-direction: column;
+       width: 370px;
+       height: 80vh;
+    }
+    .info-box .info-title{
+        height: 60px;
+        padding: 0px 30px;
+        text-align: center;
+    }
+    .info-box .info-list{
+        height: auto;
+    }
+
+    .quiz-box{
+        width: 370px;
+        
+    }
+
+    .quiz-box header .title{
+        font-size: 16px;
+    }
+    .quiz-box header .timer{
+        width: 190px;
+    }
+    .result-box{
+        width: 370px;
+    }
+
+    .quiz-box header .time-line{
+      outline-width: 100px;
+    
+    }
 
 
 
