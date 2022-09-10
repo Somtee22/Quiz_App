@@ -162,16 +162,16 @@ let userScore = 0;
              quiz_box.classList.remove("activeQuiz"); //hide quiz box
              result_box.classList.add("activeResult"); //show result box
              const scoreText = result_box.querySelector(".score_text");
-      if (userScore > 17){ // if user scored more than 3
-            let scoreTag = '<span>and congrats! , You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+      if (userScore > 15){ // if user scored more than 3
+            let scoreTag = '<span> congrats!  , You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
              scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
       }
-      else if(userScore > 10){ // if user scored more than 1
-             let scoreTag = '<span>and nice , You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+      else if(userScore > 7){ // if user scored more than 1
+             let scoreTag = '<span> nice , You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
            scoreText.innerHTML = scoreTag;
         }
      else{
-        let scoreTag = '<span>and sorry , You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span> sorry , You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
        scoreText.innerHTML = scoreTag;
        }
     }
