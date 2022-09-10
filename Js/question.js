@@ -25,7 +25,7 @@ let questions = [
     {
       numb: 3,
       question: "Choose the correct HTML element for the largest heading?",
-      answer: "<h1>",
+      answer: "h1",
       options: [
         "h1",
         "h6",
@@ -35,9 +35,21 @@ let questions = [
     ]
 },
     {
-    numb: 4,
+      numb: 4,
+      question: "What is the difference between an opening tag and a closing tag?",
+      answer: "Closing tag has a / in front",
+      options: [
+        "Both have / in front",
+        "Closing tag has a / in front",
+        "Opening tag has a / in front",
+        "There is no difference",
+        
+    ]
+},
+    {
+    numb: 5,
     question: " What is the correct HTML element for inserting a line break?",
-    answer: "<br>",
+    answer: "br",
     options: [
       "break",
       "lb",
@@ -47,18 +59,18 @@ let questions = [
     ]
 },
   {
-  numb: 5,
-  question: "What is the correct HTML for referring to an external style sheet?",
+  numb: 6,
+  question: "What does PHP stand for",
   answer: "",
   options: [
-    "Option 1",
-    "option 2",
-    "option 3",
-    "option 4"
+    "HyperText Preprocessor",
+    "HyperText Programming",
+    "HyperText Preprogramming",
+    "Home Text Preprocessor"
   ]
 },
   {
-  numb: 6,
+  numb: 7,
   question: "Where in an HTML document is the correct place to refer to an external style sheet?",
   answer: "In the <head> section",
   options: [
@@ -69,40 +81,139 @@ let questions = [
   ]
 },
   {
-  numb: 7,
+  numb: 8,
   question: "Which HTML tag is used to define an internal stylesheet?",
   answer: "style",
   options: [
     "script",
     "style",
     "HTML",
-    "<CSS>"
-  ]
-},
-  {
-  numb: 8,
-  question: "Your Question is Here",
-  answer: "Correct answer of the question is here",
-  options: [
-    "Option 1",
-    "option 2",
-    "option 3",
-    "option 4"
+    "CSS"
   ]
 },
   {
   numb: 9,
-  question: "Your Question is Here",
-  answer: "Correct answer of the question is here",
+  question: "What CSS property is used to change the text color of an element",
+  answer: "color",
+  options: [
+    "text-color",
+    "display-color",
+    "color",
+    "colouring"
+  ]
+},
+  {
+  numb: 10,
+  question: "Which of these is not an attribute of HTML elements?",
+  answer: "Line",
+  options: [
+    "Id",
+    "Class",
+    "Style ",
+    "Line"
+  ]
+},
+  {
+  numb: 11,
+  question: "What does SQL stand for?",
+  answer: "Structured Query Language",
+  options: [
+    "Styling Question Language",
+    "Stylesheet Query Language",
+    "Statement Question Language",
+    "Structured Query Language"
+  ]
+},
+  {
+  numb: 12,
+  question: "How do you add a comment in a CSS file?",
+  answer: "/* this is a comment */",
+  options: [
+    "/* this is a comment */",
+    "// this is a comment //",
+    "// this is a comment",
+    "!-- this is a comment--"
+  ]
+},
+  {
+  numb: 13,
+  question: "The # symbol specifies that the selector is?",
+  answer: "id",
+  options: [
+    "class",
+    "tag",
+    "first",
+    "id"
+  ]
+},
+  {
+  numb: 14,
+  question: "How do you make a list not display bullet points?",
+  answer: "list-style-type: none",
+  options: [
+    "list-style-type: no-bullet",
+    "list: none",
+    "bulletpoints: none",
+    "list-style-type: none"
+  ]
+},
+  {
+  numb: 15,
+  question: "What is the correct CSS syntax to change the font name?",
+  answer: "font-family:",
+  options: [
+    "font-name:",
+    "font:",
+    "font-family:",
+    "fontname:"
+  ]
+},
+  {
+  numb: 16,
+  question: "To insert a JavaScript into an HTML page, which tag is used?",
+  answer: "<script>",
+  options: [
+    "script=â€™javaâ€™",
+    "javascript",
+    "script",
+    "js"
+  ]
+},
+  {
+  numb: 17,
+  question: "What does SQL stand for?",
+  answer: "Structured Query Language",
   options: [
     "Option 1",
     "option 2",
     "option 3",
-    "option 4"
+    "Structured Query Language"
+  ]
+},
+  {
+  numb: 18,
+  question: "What does SQL stand for?",
+  answer: "Structured Query Language",
+  options: [
+    "Option 1",
+    "option 2",
+    "option 3",
+    "Structured Query Language"
+  ]
+},
+  {
+  numb: 19,
+  question: "What does SQL stand for?",
+  answer: "Structured Query Language",
+  options: [
+    "Option 1",
+    "option 2",
+    "option 3",
+    "Structured Query Language"
   ]
 },
 ];
-console.log(questions) 
+
 
 
 
