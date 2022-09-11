@@ -162,15 +162,15 @@ let userScore = 0;
              result_box.classList.add("activeResult"); //show result box
              const scoreText = result_box.querySelector(".score_text");
       if (userScore > 15){ 
-            let scoreTag = '<span> congrats!  , You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+            let scoreTag = '<span> congrats! 💚 , You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
              scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
       }
       else if(userScore > 7){ 
-             let scoreTag = '<span> nice , You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+             let scoreTag = '<span> nice🤪 You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
            scoreText.innerHTML = scoreTag;
         }
      else{
-        let scoreTag = '<span> sorry , You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span> sorry 🙈  You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
        scoreText.innerHTML = scoreTag;
        }
     }
